@@ -17,3 +17,13 @@ COPY customeraddress(id_address, id_customer)
 FROM 'C:\Users\Public\p6-data\customeraddress.csv'
 DELIMITER ','
 CSV HEADER;
+
+COPY credit_card(id_customer, credit_card_type, credit_card_name, credit_card_number, credit_card_exp_date, credit_card_crypto)
+FROM 'C:\Users\Public\p6-data\credit_card.csv'
+DELIMITER ','
+CSV HEADER;
+
+COPY staff(id_user, first_name, last_name, email)
+FROM 'C:\Users\Public\p6-data\staff.csv'
+DELIMITER ','
+CSV HEADER;
