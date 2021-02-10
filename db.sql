@@ -9,7 +9,7 @@ CREATE TABLE customer (
     id_user integer,
     first_name varchar(100),
     last_name varchar(100),
-    phone_number varchar(10),
+    phone_number varchar(20),
     email varchar(100),
     customer_type varchar(50),
     PRIMARY KEY (id_customer),
