@@ -37,7 +37,7 @@ CREATE TABLE credit_card (
     id_customer integer REFERENCES customer,
     credit_card_type varchar(50),
     credit_card_name varchar(50),
-    credit_card_number integer,
+    credit_card_number int8,
     credit_card_exp_date date,
     credit_card_crypto integer
 );
