@@ -1,0 +1,4 @@
+id_user,first_name,last_name,phone_number,email,customer_type
+1,ludovic,schmol,06 45 99 65 28,lschmoll@gmail.com,web
+2,julie,durand,07 88 55 44 32,jdurand@gmail.com,autre
+3,luc,sanchez,06 66 88 77 45,lsanchez,autre
