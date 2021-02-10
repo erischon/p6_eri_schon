@@ -7,7 +7,7 @@ CREATE TABLE user_account (
 CREATE TABLE customer (
     id_customer integer GENERATED ALWAYS AS IDENTITY,
     id_user integer,
-    first_name varchar(100),
+    first_name varchar(100) NOT NULL,
     last_name varchar(100),
     phone_number varchar(20),
     email varchar(100),
@@ -48,7 +48,7 @@ CREATE TABLE shop (
     address_2 varchar(100),
     zip_code varchar(5),
     city varchar(100),
-    phone_number varchar(10),
+    phone_number varchar(20),
     email varchar(100)
 );
 
