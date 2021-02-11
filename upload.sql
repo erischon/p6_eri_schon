@@ -23,6 +23,11 @@ FROM 'C:\Users\Public\p6-data\credit_card.csv'
 DELIMITER ','
 CSV HEADER;
 
+COPY shop(address_1, address_2, zip_code, city, phone_number, email)
+FROM 'C:\Users\Public\p6-data\shop.csv'
+DELIMITER ','
+CSV HEADER;
+
 COPY staff(id_user, first_name, last_name, email)
 FROM 'C:\Users\Public\p6-data\staff.csv'
 DELIMITER ','
