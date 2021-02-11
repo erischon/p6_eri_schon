@@ -28,7 +28,12 @@ FROM 'C:\Users\Public\p6-data\shop.csv'
 DELIMITER ','
 CSV HEADER;
 
-COPY staff(id_user, first_name, last_name, email)
+COPY staff(id_user, id_shop, first_name, last_name, email)
 FROM 'C:\Users\Public\p6-data\staff.csv'
+DELIMITER ','
+CSV HEADER;
+
+COPY staff_role(role_name)
+FROM 'C:\Users\Public\p6-data\staff_role.csv'
 DELIMITER ','
 CSV HEADER;
