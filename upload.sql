@@ -37,3 +37,8 @@ COPY staff_role(role_name)
 FROM 'C:\Users\Public\p6-data\staff_role.csv'
 DELIMITER ','
 CSV HEADER;
+
+COPY StaffRole(id_staff, id_role)
+FROM 'C:\Users\Public\p6-data\staffrole.csv'
+DELIMITER ','
+CSV HEADER;
