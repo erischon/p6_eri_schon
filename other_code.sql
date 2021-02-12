@@ -45,3 +45,8 @@ alter table recipeingredient alter column ingredient_quantity TYPE decimal(6, 2)
 -- ajout d'un customer staff
 INSERT INTO customer (first_name, customer_type)
     VALUES ('staff', 'staff');
+
+-- modification de the_order et order_status (déplacement de id_staff)
+alter table the_order drop id_staff;
+alter table order_status add column id_staff integer REFERENCES staff;
+alter table order_status rename column order_date to status_time;
