@@ -112,3 +112,8 @@ COPY order_type(type_name)
 FROM 'C:\Users\Public\p6-data\order_type.csv'
 DELIMITER ','
 CSV HEADER;
+
+COPY billing_mode(bm_name)
+FROM 'C:\Users\Public\p6-data\billing_mode.csv'
+DELIMITER ','
+CSV HEADER;
