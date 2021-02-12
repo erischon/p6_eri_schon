@@ -34,4 +34,10 @@ INSERT INTO ingredient (ingredient_name, stock_type)
 INSERT INTO ingredient (ingredient_name, stock_type)
     VALUES ('levure', 'g');
 INSERT INTO ingredient (ingredient_name, stock_type)
-    VALUES ('huile d\'olive', 'cl');
+    VALUES ('huile d olive', 'cl');
+
+INSERT INTO ingredient (ingredient_name, stock_type)
+    VALUES ('pâte à pizza', 'unité');
+
+-- modification du type pour la quantité de RecipeIngredient
+alter table recipeingredient alter column ingredient_quantity TYPE decimal(6, 2);
