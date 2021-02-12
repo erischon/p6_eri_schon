@@ -25,3 +25,13 @@ alter table ingredient drop stock;
 -- mise à jour de la table OtherStock
 alter table other_stock drop id_shop;
 alter table other_stock drop stock;
+
+-- j'ai oublié la pâte...
+INSERT INTO ingredient (ingredient_name, stock_type)
+    VALUES ('farine', 'kg');
+INSERT INTO ingredient (ingredient_name, stock_type)
+    VALUES ('sel', 'g');
+INSERT INTO ingredient (ingredient_name, stock_type)
+    VALUES ('levure', 'g');
+INSERT INTO ingredient (ingredient_name, stock_type)
+    VALUES ('huile d\'olive', 'cl');
