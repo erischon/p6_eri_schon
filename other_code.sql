@@ -41,3 +41,7 @@ INSERT INTO ingredient (ingredient_name, stock_type)
 
 -- modification du type pour la quantité de RecipeIngredient
 alter table recipeingredient alter column ingredient_quantity TYPE decimal(6, 2);
+
+-- ajout d'un customer staff
+INSERT INTO customer (first_name, customer_type)
+    VALUES ('staff', 'staff');
