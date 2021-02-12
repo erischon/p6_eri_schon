@@ -14,3 +14,6 @@ alter table credit_card alter column credit_card_number TYPE int8;
 -- mise à jour de user
 INSERT INTO user_account (user_password, register_date)
     VALUES ('123', '10/02/2021');
+
+INSERT INTO permission (permission_type)
+    VALUES ('cmd_status');
