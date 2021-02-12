@@ -52,3 +52,8 @@ COPY Rolepermission(id_role, id_permission)
 FROM 'C:\Users\Public\p6-data\rolepermission.csv'
 DELIMITER ','
 CSV HEADER;
+
+COPY ingredient(ingredient_name, stock_type)
+FROM 'C:\Users\Public\p6-data\ingredient.csv'
+DELIMITER ','
+CSV HEADER;
