@@ -47,3 +47,8 @@ COPY permission(permission_type)
 FROM 'C:\Users\Public\p6-data\permission.csv'
 DELIMITER ','
 CSV HEADER;
+
+COPY Rolepermission(id_role, id_permission)
+FROM 'C:\Users\Public\p6-data\rolepermission.csv'
+DELIMITER ','
+CSV HEADER;
