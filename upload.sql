@@ -117,3 +117,8 @@ COPY billing_mode(bm_name)
 FROM 'C:\Users\Public\p6-data\billing_mode.csv'
 DELIMITER ','
 CSV HEADER;
+
+COPY the_order(order_number, id_customer, id_shop, id_type, order_date, total_price)
+FROM 'C:\Users\Public\p6-data\the_order.csv'
+DELIMITER ','
+CSV HEADER;
