@@ -77,3 +77,38 @@ COPY categorie(cat_name)
 FROM 'C:\Users\Public\p6-data\categorie.csv'
 DELIMITER ','
 CSV HEADER;
+
+COPY vat(vat_rate)
+FROM 'C:\Users\Public\p6-data\vat.csv'
+DELIMITER ','
+CSV HEADER;
+
+COPY recipe(recipe_name, description)
+FROM 'C:\Users\Public\p6-data\recipe.csv'
+DELIMITER ','
+CSV HEADER;
+
+COPY RecipeIngredient(id_ingredient, id_recipe, ingredient_quantity)
+FROM 'C:\Users\Public\p6-data\recipeingredient.csv'
+DELIMITER ','
+CSV HEADER;
+
+COPY product(id_categorie, id_recipe, id_vat, product_name, unit_price, is_available)
+FROM 'C:\Users\Public\p6-data\product.csv'
+DELIMITER ','
+CSV HEADER;
+
+COPY ProductOtherStock(id_otherstock, id_product, otherprod_quantity)
+FROM 'C:\Users\Public\p6-data\productotherstock.csv'
+DELIMITER ','
+CSV HEADER;
+
+COPY status_list(status_name)
+FROM 'C:\Users\Public\p6-data\status_list.csv'
+DELIMITER ','
+CSV HEADER;
+
+COPY order_type(type_name)
+FROM 'C:\Users\Public\p6-data\order_type.csv'
+DELIMITER ','
+CSV HEADER;
