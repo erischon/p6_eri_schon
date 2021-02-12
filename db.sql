@@ -85,18 +85,26 @@ CREATE TABLE RolePermission (
 
 CREATE TABLE ingredient (
     id_ingredient integer PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-    id_shop integer REFERENCES shop,
     ingredient_name varchar(50),
-    stock_type varchar(10),
-    stock integer
+    stock_type varchar(10)
+);
+
+CREATE TABLE ShopIngredient (
+    id_ingredient integer REFERENCES ingredient,
+    id_shop integer REFERENCES shop,
+    quantity integer
 );
 
 CREATE TABLE other_stock (
     id_otherstock integer PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-    id_shop integer REFERENCES shop,
     stock_name varchar(50),
-    stock_type varchar(10),
-    stock integer
+    stock_type varchar(10)
+);
+
+CREATE TABLE ShopOtherStock (
+    id_otherstock integer REFERENCES other_stock,
+    id_shop integer REFERENCES shop,
+    quantity integer
 );
 
 CREATE TABLE categorie (
