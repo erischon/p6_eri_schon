@@ -17,3 +17,11 @@ INSERT INTO user_account (user_password, register_date)
 
 INSERT INTO permission (permission_type)
     VALUES ('cmd_status');
+
+-- mise à jour de la table ingedient
+alter table ingredient drop id_shop;
+alter table ingredient drop stock;
+
+-- mise à jour de la table OtherStock
+alter table other_stock drop id_shop;
+alter table other_stock drop stock;
