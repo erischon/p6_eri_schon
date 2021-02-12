@@ -166,7 +166,6 @@ CREATE TABLE the_order (
     id_order integer PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
     order_number varchar(16),
     id_customer integer REFERENCES customer,
-    id_staff integer REFERENCES staff,
     id_shop integer REFERENCES shop,
     id_type integer REFERENCES order_type,
     order_date timestamp,
@@ -177,7 +176,8 @@ CREATE TABLE order_status (
     id_orderstatus integer PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
     id_status integer REFERENCES status_list,
     id_order integer REFERENCES the_order,
-    order_date timestamp
+    id_staff integer REFERENCES staff,
+    status_time timestamp
 );
 
 CREATE TABLE order_detail (
