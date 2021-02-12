@@ -72,3 +72,8 @@ COPY ShopOtherStock(id_otherstock, id_shop, quantity)
 FROM 'C:\Users\Public\p6-data\shopotherstock.csv'
 DELIMITER ','
 CSV HEADER;
+
+COPY categorie(cat_name)
+FROM 'C:\Users\Public\p6-data\categorie.csv'
+DELIMITER ','
+CSV HEADER;
