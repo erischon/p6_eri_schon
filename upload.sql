@@ -57,3 +57,8 @@ COPY ingredient(ingredient_name, stock_type)
 FROM 'C:\Users\Public\p6-data\ingredient.csv'
 DELIMITER ','
 CSV HEADER;
+
+COPY shopingredient(id_ingredient, id_shop, quantity)
+FROM 'C:\Users\Public\p6-data\shopingredient.csv'
+DELIMITER ','
+CSV HEADER;
