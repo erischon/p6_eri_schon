@@ -5,3 +5,8 @@ COPY order_status(id_order, id_status, status_time, id_staff)
 FROM 'C:\Users\Public\p6-data\b_order_status.csv'
 DELIMITER ','
 CSV HEADER;
+
+COPY order_detail(id_order, id_product, quantity)
+FROM 'C:\Users\Public\p6-data\b_order_detail.csv'
+DELIMITER ','
+CSV HEADER;
