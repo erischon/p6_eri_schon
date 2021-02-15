@@ -1,0 +1,9 @@
+id_categorie,id_recipe,id_vat,product_name,unit_price,is_available
+1,5,3,napolitaine,8.00,yes
+1,6,3,orientale,8.00,yes
+1,7,3,calzone,8.90,yes
+2,,3,coca cola,1.00,yes
+2,,3,ice tea,1.00,yes
+3,,3,donut,1.50,yes
+3,,3,glace,2.00,no
+4,,3,chips,1.00,yes
