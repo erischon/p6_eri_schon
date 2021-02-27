@@ -1,3 +1,8 @@
+-- 
+-- Les commandes dont je me suis servis pour uploader les data dans la database
+-- pour un upload des données utiliser le fichier PGESTpizza_09_dump_ocpizza 
+-- 
+
 COPY user_account(user_password, register_date)
 FROM 'C:\Users\Public\p6-data\user_account.csv'
 DELIMITER ','
