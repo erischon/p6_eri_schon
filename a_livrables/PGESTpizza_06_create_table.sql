@@ -1,3 +1,7 @@
+-- 
+-- Les différentes requêtes pour créer la base et tables
+-- 
+
 CREATE DATABASE ocpizza;
 
 CREATE TABLE user_account (
