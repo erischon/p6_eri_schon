@@ -1,3 +1,5 @@
+CREATE DATABASE ocpizza;
+
 CREATE TABLE user_account (
     id_user         integer PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
     user_password   varchar(20) NOT NULL,
