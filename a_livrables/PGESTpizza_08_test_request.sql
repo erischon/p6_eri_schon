@@ -1,3 +1,10 @@
+-- 
+-- Des requêtes pour tester la DB et si l'on a bien les informations désirées
+-- 
+-- 'Une commande' est entendu comme sa caractéristique unique : son ID
+-- les requêtes peuvent être modifiées au niveau du SELECT si l'on souhaite le détail d'une commande 
+-- 
+
 -- Lister les commandes du jour ainsi que leur statut
 SELECT id_order
 FROM the_order
