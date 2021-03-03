@@ -1,1 +1,2 @@
-# Solution Technique pour un système de gestion de Pizzeria(s)
+# Solution Technique pour un système de gestion de Pizzerias
+
